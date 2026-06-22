@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chance Bentulan — Full Stack Developer</title>
+  <meta name="description" content="Full stack developer based in Cebu, Philippines, building web apps with Vue, React, Django, and more. Available for remote work worldwide." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Chance Bentulan — Full Stack Developer" />
+  <meta property="og:description" content="Full stack developer based in Cebu, Philippines, building web apps with Vue, React, Django, and more. Available for remote work worldwide." />
+  <meta property="og:image" content="https://chancebentulan.com/profile.jpeg" />
+  <meta property="og:url" content="https://chancebentulan.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chance Bentulan — Full Stack Developer" />
+  <meta name="twitter:description" content="Full stack developer based in Cebu, Philippines, building web apps with Vue, React, Django, and more." />
+  <meta name="twitter:image" content="https://chancebentulan.com/profile.jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-mark" aria-hidden="true">CB</span>
+        <span class="nav__logo-name">Chance Bentulan</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Hi, my name is</p>
+          <h1 class="hero__title">Chance Bentulan<span class="hero__caret" aria-hidden="true"></span></h1>
+          <h2 class="hero__subtitle">I build <span class="hero__rotate" id="heroRotate">full-stack web apps</span></h2>
+          <p class="hero__lead">
+            I'm a full stack developer who enjoys turning ideas into fast,
+            accessible, and well-crafted digital experiences — from the database
+            all the way to the pixel.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View my work</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <!-- Drop your photo into this folder as profile.jpg (square works best).
+               Until it exists, the initials below show instead of a broken image. -->
+          <img class="hero__photo" src="profile.jpeg" alt="Chance Bentulan"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+          <div class="hero__photo-fallback" aria-hidden="true">CB</div>
+        </div>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> About me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              Hello! I'm Chance, a full stack developer who loves building
+              software that lives on the internet.
+            </p>
+            <p>
+              I work across the whole stack — turning Figma designs into
+              pixel-accurate interfaces on the front end and building the APIs
+              and data models that power them on the back end.
+            </p>
+            <p>
+              I'm based in <strong>Cebu, Philippines</strong> and work remotely
+              with teams and clients worldwide.
+            </p>
+            <p>Here's what I focus on:</p>
+            <ul class="focus">
+              <li class="focus__item">
+                <span class="focus__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </span>
+                Building full stack web apps
+              </li>
+              <li class="focus__item">
+                <span class="focus__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </span>
+                Pixel-accurate UI from Figma
+              </li>
+              <li class="focus__item">
+                <span class="focus__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </span>
+                Designing &amp; integrating APIs
+              </li>
+              <li class="focus__item">
+                <span class="focus__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="6" rx="1"/><rect x="2" y="15" width="20" height="6" rx="1"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                </span>
+                Deploying &amp; maintaining apps in production
+              </li>
+              <li class="focus__item">
+                <span class="focus__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="6" width="8" height="14" rx="4"/><path d="M19 7l-3 2M5 7l3 2M19 13h-3M5 13h3M19 19l-3-2M5 19l3-2M12 2v3"/></svg>
+                </span>
+                Refactoring &amp; catching bugs
+              </li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <dl class="about__facts">
+              <div class="about__fact">
+                <span class="about__fact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div class="about__fact-text">
+                  <dt>Location</dt>
+                  <dd>Cebu, Philippines</dd>
+                </div>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <div class="about__fact-text">
+                  <dt>Availability</dt>
+                  <dd>Remote worldwide</dd>
+                </div>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                </span>
+                <div class="about__fact-text">
+                  <dt>Role</dt>
+                  <dd>Full stack engineer</dd>
+                </div>
+              </div>
+              <div class="about__fact">
+                <span class="about__fact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+                </span>
+                <div class="about__fact-text">
+                  <dt>Experience</dt>
+                  <dd>5 years</dd>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Skills &amp; tools</h2>
+        <div class="skills">
+          <div class="skills__group">
+            <h3>Frontend</h3>
+            <ul>
+              <li>JavaScript</li>
+              <li>Vue &amp; Nuxt</li>
+              <li>React &amp; Next.js</li>
+              <li>CSS &amp; Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Tools &amp; DevOps</h3>
+            <ul>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>GitHub Actions</li>
+              <li>Claude (AI tooling)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">HQZen</h3>
+              <div class="card__links">
+                <a href="https://hqzen.com/" target="_blank" rel="noopener" aria-label="View HQZen" title="View project">↗</a>
+              </div>
+            </div>
+            <p class="card__desc">
+              A workforce and productivity platform for BPO and remote teams —
+              bringing recruitment, attendance and time tracking, productivity
+              monitoring, and task management together in one managed system.
+            </p>
+            <ul class="card__tags">
+              <li>Full-stack</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">BPOSeats</h3>
+              <div class="card__links">
+                <a href="https://bposeats.com/" target="_blank" rel="noopener" aria-label="View BPOSeats" title="View project">↗</a>
+              </div>
+            </div>
+            <p class="card__desc">
+              The client-facing site for a Philippine BPO provider, showcasing
+              seat-leasing, office space, and call-center outsourcing solutions
+              for companies building remote teams in Cebu.
+            </p>
+            <ul class="card__tags">
+              <li>Full-stack</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">Global Trade Alert</h3>
+              <div class="card__links">
+                <a href="https://globaltradealert.org/" target="_blank" rel="noopener" aria-label="View Global Trade Alert" title="View project">↗</a>
+              </div>
+            </div>
+            <p class="card__desc">
+              An independent watchdog tracking government policies that affect
+              international trade. A searchable database, data center, and API
+              let policymakers, businesses, and researchers monitor trade and
+              industrial policy changes worldwide.
+            </p>
+            <ul class="card__tags">
+              <li>Full-stack</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__title">Digital Policy Alert</h3>
+              <div class="card__links">
+                <a href="https://digitalpolicyalert.org/" target="_blank" rel="noopener" aria-label="View Digital Policy Alert" title="View project">↗</a>
+              </div>
+            </div>
+            <p class="card__desc">
+              A platform monitoring digital-economy regulation across the globe —
+              tracking consultations, laws, and enforcement around AI, data
+              privacy, and digital services, with exploration by country and
+              sector plus custom alerts and API access.
+            </p>
+            <ul class="card__tags">
+              <li>Full-stack</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container container--narrow">
+        <h2 class="section__title section__title--center"><span class="section__num">04.</span> Get in touch</h2>
+        <p class="contact__lead">
+          I'm currently open to new opportunities — full-time remote roles,
+          freelance builds, or collaborations on something you're excited about.
+          Whether you have a project in mind, a question, or just want to say hi,
+          I'd love to hear from you and I'll get back to you as soon as I can.
+        </p>
+        <ul class="contact__info">
+          <li class="contact__info-item contact__info-item--status"><span class="dot"></span> Available</li>
+          <li class="contact__info-item">Cebu, PH · GMT+8</li>
+          <li class="contact__info-item">Within 48 hours</li>
+          <li class="contact__info-item">Remote &amp; freelance</li>
+        </ul>
+        <p class="contact__cta">Reach me through any of these:</p>
+        <div class="contact__links">
+          <a class="contact__link contact__link--primary" href="mailto:chancebentulan@gmail.com">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="m2 7 10 6 10-6"></path>
+            </svg>
+            <span>Email</span>
+          </a>
+          <a class="contact__link" href="https://github.com/ChanceBentulan" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 4.9 18.3 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a class="contact__link" href="https://www.linkedin.com/in/chance-diago-bentulan-9185a2230/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <button class="contact__copy" id="copyEmail" type="button" data-email="chancebentulan@gmail.com">
+          Copy email address
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__socials">
+        <a href="https://github.com/ChanceBentulan" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/chance-diago-bentulan-9185a2230/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:chancebentulan@gmail.com" aria-label="Email">Email</a>
+      </div>
+      <p class="footer__note">Designed &amp; built by Chance Bentulan · 2026</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
