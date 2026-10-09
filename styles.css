@@ -598,13 +598,16 @@ img { max-width: 100%; display: block; }
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--live-soft); }
   50%      { opacity: 0.6; box-shadow: 0 0 0 4px transparent; }
 }
-.card__desc { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; }
+.card__desc { color: var(--text-muted); font-size: 0.95rem; }
 .card__tags {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 18px;
+  /* Push tags to the card's bottom edge so they align across a row
+     regardless of how many lines the description wraps to. */
+  margin-top: auto;
+  padding-top: 18px;
 }
 .card__tags li {
   font-family: var(--font-mono);
